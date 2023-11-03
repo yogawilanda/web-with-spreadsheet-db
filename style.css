@@ -21,7 +21,7 @@
     color: white;
     font-weight: bold;
     font-size: medium;
-    padding: 12px 20px;
+    padding: 12px 12px;
     border-radius: 12px;
     text-decoration: none;
 }
@@ -67,3 +67,42 @@ input {
     text-decoration: none;
     color: bisque;
 }
+
+
+/* animation  */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+  }
+  
+  .loading-text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: white;
+  }
+  
+  .ticking-animation {
+    animation-name: ticking;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes ticking {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
