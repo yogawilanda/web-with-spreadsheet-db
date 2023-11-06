@@ -60,8 +60,3 @@ const submitForm = async (form, scriptURL) => {
     console.error(error);
   }
 };
-
-
-
-
-

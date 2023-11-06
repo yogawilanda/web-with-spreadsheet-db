@@ -1,108 +1,135 @@
-:root{
-    background-color: slategray;
-    background-color: rgb(32, 32, 32);
-    color: rgb(206, 206, 206);
-    font-family: 'Poppins', sans-serif;
+:root {
+  background-color: slategray;
+  background-color: rgb(32, 32, 32);
+  color: rgb(206, 206, 206);
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 5vh;
-    padding: 6px 10px;
-    gap: 50px;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 6px 10px;
+  gap: 50px;
 }
 
-.navbar-btn{
-    background-color: none;
-    border: 2px solid burlywood;
-    color: white;
-    font-weight: bold;
-    font-size: medium;
-    padding: 12px 12px;
-    border-radius: 12px;
-    text-decoration: none;
+.navbar-btn {
+  background-color: none;
+  border: 2px solid burlywood;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  padding: 12px 12px;
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+.navbar-btn:hover {
+  /* background-color: none; */
+  border: 2px solid burlywood;
+  /* color: white; */
+  font-weight: bold;
+  font-size: medium;
+  padding: 12px 12px;
+  /* border-radius: 12px; */
+  text-decoration: none;
 }
 
 .flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
 }
 
 .col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: left;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  gap: 1rem;
 }
 
 input {
-    padding: 12px 20px;
-    width: 16rem;
-    border-radius: 12px;
-    border: 1.4px solid burlywood;
-    background-color: whitesmoke;
+  padding: 12px 20px;
+  width: 16rem;
+  border-radius: 12px;
+  border: 1.4px solid burlywood;
+  background-color: whitesmoke;
 }
 
 .button {
-    background-color: burlywood;
-    border: none;
-    color: white;
-    font-weight: bold;
-    font-size: medium;
-    padding: 12px 20px;
-    border-radius: 12px;
-    cursor: pointer;
-    width: 100%;
+  background-color: burlywood;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  padding: 12px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: transparent;
+  border: 1px solid burlywood;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  padding: 12px 20px;
+  border-radius: 12px;
+}
+
+.button:disabled {
+  background-color: transparent;
+  border: 1px solid rgb(92, 72, 46);
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  padding: 12px 20px;
+  border-radius: 12px;
 }
 
 .link {
-    color: rgb(206, 206, 206);
-    text-decoration: none;
-    color: bisque;
+  color: rgb(206, 206, 206);
+  text-decoration: none;
+  color: bisque;
 }
-
 
 /* animation  */
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+.loading-text {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: white;
+}
+
+.ticking-animation {
+  animation-name: ticking;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ticking {
+  0% {
+    opacity: 1;
   }
-  
-  .loading-text {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 24px;
-    color: white;
+  50% {
+    opacity: 0;
   }
-  
-  .ticking-animation {
-    animation-name: ticking;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+  100% {
+    opacity: 1;
   }
-  
-  @keyframes ticking {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
+}
