@@ -5,6 +5,12 @@
   font-family: "Poppins", sans-serif;
 }
 
+.hero-image{
+  width: 100%;
+  height: 50vh;
+  object-fit: contain;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
