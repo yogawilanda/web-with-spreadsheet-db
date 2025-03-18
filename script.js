@@ -40,9 +40,10 @@ const submitForm = async (form, scriptURL) => {
     // Check if the response was successful
     if (response.ok) {
       console.log("Success!", response);
-      alert("Your message has been sent!");
+      // alert("Your message has been sent!");
     } else {
-      alert("There was an error sending your message.");
+      console.log("Error!", response);
+      // alert("There was an error sending your message.");
     }
   } catch (error) {
     // Hide the loading indicator
