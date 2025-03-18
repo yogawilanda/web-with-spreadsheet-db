@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulir</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,47 +21,52 @@
         target="_blank"
         >Database</a
       >
-      <a rel="noopener noreferrer"
+      <a
         class="navbar-btn"
-        href="https://yogawilanda.github.io/yogawilanda/"
+        href="./form-pendaftaran.html"
         target="_blank"
-        >Developer's Page</a
+        >Daftar Agensi</a
+      >
+      <a
+        class="navbar-btn"
+        href="./form-pendaftaran.html"
+        target="_blank"
+        >Daftar Produk</a
+      >
+      <a
+        class="navbar-btn"
+        href="./form-pendaftaran.html"
+        target="_blank"
+        >Daftar Agensi</a
       >
     </div>
-    <div class="flex">
-
-
+    <div class="">
       <!-- Header -->
-      <div class="">
-        <h1>Submit your message here</h1>
+      <div id="hero-title">
+
+        <div class="hero-image-container">
+          <img class="hero-image" src="./hero-image.webp" alt="hero-image" />
+        </div>
+        <div class="col">
+          <form class="col" name="multi-search">
+            <input name="search-query" type="text" placeholder="Apakah yang anda cari?" required />
+            <button class="button" type="submit">Send</button>
+          </form>
+        </div>
       </div>
 
       <!-- form section -->
       <div class="col">
-        <form class="col" name="submit-to-google-sheet">
-          <input name="Username" type="text" placeholder="Username" required />
-          <input
-            name="Message"
-            type="text"
-            placeholder="Enter Your Message"
-            required
-          />
-          <input name="Email" type="email" placeholder="Email" required />
-          <button class="button" type="submit">Send</button>
-        </form>
+        Header Section
       </div>
 
       <!-- Result Section -->
       <div>
-        <p>
-          Get your form result
-          <a rel="noopener noreferrer"
-            class="link"
-            href="https://docs.google.com/spreadsheets/d/16rpo4VAfrKZn8ilHKQFFFgvpRbFh7kqwqPi9_pMskLg/edit?usp=sharing"
-            target="_blank"
-            >here</a
-          >
-        </p>
+        Portfolio Section
+      </div>
+      <!-- Result Section -->
+      <div>
+        Product Section
       </div>
     </div>
     <script src="./script.js"></script>
